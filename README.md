@@ -31,3 +31,15 @@ sudo chmod a+x ./funstore.setup && sudo ./funstore.setup
 `
 ## Login
 Once setup, users can login to funstore [here](http://funstore.io/login)
+
+## funstore companion app
+
+This is a companion app for funstore users. This app lets IoTs deployed on IoT kits by the user of funstore to be able to access various features of the IoT. 
+
+[Download here] (https://play.google.com/store/apps/details?id=com.mlabs.embedded)
+
+Funstore provides users with fast on-boarding to Internet of things using their IoT kit. Users owning Raspberry Pi, Grove Pi and various grove modules can also deploy their IoTs using funstore and it's companion app.
+
+The app and site is currently in beta and is being tested along with the funstore. Will highly appreciate a feedback.
+
+To know more visit: [www.funstore.io](www.funstore.io)
