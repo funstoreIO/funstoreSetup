@@ -273,6 +273,15 @@ getjq()
 main()
 {
 clear
+echo "This program will setup funstore client along with various third party software on your raspberry pi"
+echo "It is recommended to install it on fresh NOOBS setup and will take approximately 20 minutes to install."
+userConfirm=true
+confirm() {
+   [ "$userConfirm" = true ] && read -p "Proceed? (Enter) - (^C to abort)"
+}
+confirm
+
+clear
 checkVersion
 checkRootStatus
 updateAptitude
@@ -303,7 +312,6 @@ setStartup
 getBasicPackages
 getGrovePi
 sudo chown -fR www-data:www-data /usr/share/funstore/
-echo -e "\nInstall successful!"
-echo "hi"
+echo -e "\nInstallation successful!"
 }
 main
