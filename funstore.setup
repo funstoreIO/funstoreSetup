@@ -273,8 +273,8 @@ getjq()
 main()
 {
 clear
-echo "This program will setup funstore client along with various third party software on your raspberry pi"
-echo "It is recommended to install it on fresh NOOBS setup and will take approximately 20 minutes to install."
+echo "This program will setup funstore client along with various third party software on your Raspberry Pi."
+echo "It is recommended to install it on fresh NOOBS with Raspbian setup and will take approximately 20 minutes to install."
 userConfirm=true
 confirm() {
    [ "$userConfirm" = true ] && read -p "Proceed? (Enter) - (^C to abort)"
@@ -300,6 +300,8 @@ nodeSetup
 echo "If you can see connected on your online account, this means all is well"
 nodeLaunch
 setLog
+echo "Dashboard is installed under MIT Licence. Press Enter to proceed."
+confirm
 getDashboard
 sudo chown -fR www-data:www-data /usr/share/funstore/
 getWebIOPi
@@ -310,6 +312,8 @@ editSudoer
 setupApache
 setStartup
 getBasicPackages
+echo "Grove modules are installed under Creative Commons Attribution-ShareAlike 3.0. Press Enter to proceed."
+confirm
 getGrovePi
 sudo chown -fR www-data:www-data /usr/share/funstore/
 echo -e "\nInstallation successful!"
