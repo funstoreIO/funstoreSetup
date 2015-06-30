@@ -38,7 +38,8 @@ This is a companion app for funstore users. This app lets IoTs deployed on IoT k
 
 [Download here] (https://play.google.com/store/apps/details?id=com.mlabs.embedded)
 
-Funstore provides users with fast on-boarding to Internet of things using their IoT kit. Users owning Raspberry Pi, Grove Pi and various grove modules can also deploy their IoTs using funstore and it's companion app.
+Funstore provides users with fast on-boarding to Internet of things using their IoT kit. Users owning Raspberry Pi, Grove Pi and various grove modules can also deploy their IoTs using funstore and it's companion app. Funstore uses [Grove Pi](https://github.com/DexterInd/GrovePi/) library for python experiments. These files have been made available online through a [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/) license.
+
 
 The app and site is currently in beta and is being tested along with the funstore. Will highly appreciate a feedback.
 
