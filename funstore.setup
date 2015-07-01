@@ -313,7 +313,6 @@ setupApache
 setStartup
 getBasicPackages
 echo "Grove modules are installed under Creative Commons Attribution-ShareAlike 3.0. Press Enter to proceed."
-confirm
 getGrovePi
 sudo chown -fR www-data:www-data /usr/share/funstore/
 echo -e "\nInstallation successful!"
