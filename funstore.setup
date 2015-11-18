@@ -93,10 +93,12 @@ getApache()
 setupApache()
 {
 sudo service apache2 restart
-apt-get install -y libapache2-mod-authnz-external
+sudo apt-get install -y libapache2-mod-authnz-external
 sudo rm -f /etc/apache2/mods-enabled/authnz_external.load
 sudo a2enmod rewrite authnz_external || { echo -e "Install failed!" 1>&2; exit 1; }
-sudo a2dissite default || { echo -e "Install failed!" 1>&2; exit 1; }
+sudo a2dissite default-ssl || { echo -e "Install failed!" 1>&2; exit 1; }
+sudo sed -i '/Options Indexes None/d' /etc/apache2/sites-available/funstore.conf 
+sudo rm -rf /etc/apache2/sites-enabled/000-default.conf 
 sudo a2ensite funstore || { echo -e "Install failed!" 1>&2; exit 1; }
 sudo service apache2 restart || { echo -e "Install failed!" 1>&2; exit 1; }
 }
