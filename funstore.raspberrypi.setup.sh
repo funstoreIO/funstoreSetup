@@ -12,9 +12,9 @@ installFunstore()
     npm install -g
     cd /usr/share/funstore/funstore.npm.module/bin
     cp funstore.json /boot/
-	rm /etc/rc.local
-	cp rc.local /etc/ 
-	chmod a+x /etc/rc.local
+    rm /etc/rc.local
+    cp rc.local /etc/ 
+    chmod a+x /etc/rc.local
     rm -fR funstore.npm.tar.gz
     sudo chown -fR pi:pi /usr/share/funstore/funstoreDependencies
     cd /usr/share/funstore/funstoreDependencies
